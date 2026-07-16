@@ -1,11 +1,10 @@
-body {
-  font-family:Arial;
-  text-align: center;
+body{
+  background-color:#fof8ff;
+  text-align:center;
 }
-h1 {
-  color: blue;
+h1{
+  color:blue;
 }
-p {
+p{
   font-size:20px;
-}
-  
+{
