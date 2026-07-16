@@ -1,26 +1,25 @@
-<1Doctype html>
+<!Doctype html>
 <html>
 <head>
   <tittle>simple calculator</tittle>
 </head>
 <body>
-  <h1>simple calculator</h1>
-  <input type="number" id="num1"
-placeholder="First number">
-   <br><br>
-   <input type="number"id=num2"
+<h1>simple calculator</h1>
+<input type="number" id="num1"placeholder="First number">
+<br><br>
+<input type="number"id="num2"
 placeholder="second number">
-   <br><br>
-  <button onclick="add()">Add</button>
-  <h2 id="result"></h2>
-  <script>
-    function add(){
+<br><br>
+<button onclick="add()">Add</button>
+<h2 id="result">Result:</h2>
+<script>
+function add() {
       let a =
 number(document.getElementByid("num1").value);
       let b =
-number(document.getElementByid("num2").value);
-document.getElementByid("result").innerHtml="result:+(a+b);
-{
-  </script>
+number(document.getElementById("num2").value);
+    document.getElementById("result").innerHtml="result: " + (a+b);
+}
+</script>
 </body>
 </html>
