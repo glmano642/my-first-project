@@ -35,3 +35,10 @@ button:hover {
     color: green;
     margin-top: 20px;
 }
+.calculator {
+    width:300px;
+    margin:50px auto;
+    padding:20px;
+    background:white;
+    border-radius:15px;
+}
