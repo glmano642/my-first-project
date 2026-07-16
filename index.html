@@ -1,11 +1,92 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <tittle>my first website</tittle>
-  <link rel="stylesheet" href="style.css">
+    <title>Manoj Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <h1>welcome to my website</h1>
-  <p>my name is manoj kumar.</p>
+
+<div class="profile">
+
+<h1>Manoj Kumar</h1>
+<h2>Front-End Developer | Fresher</h2>
+
+<hr>
+
+<h2>Education</h2>
+<p>
+B.Sc Computer Science<br>
+Sudharshan College of Arts and Science<br>
+Year: 2026
+</p>
+
+<h2>Contact</h2>
+<p>
+Location: Tamil Nadu<br>
+Email: yourmail@gmail.com
+</p>
+
+<hr>
+
+<h2>Mini Calculator</h2>
+
+<p>
+Technologies: HTML | CSS | JavaScript | DOM Manipulation
+</p>
+
+
+<input type="number" id="num1" placeholder="Enter First Number">
+
+<input type="number" id="num2" placeholder="Enter Second Number">
+
+<br><br>
+
+<button onclick="add()">+</button>
+<button onclick="subtract()">-</button>
+<button onclick="multiply()">×</button>
+<button onclick="divide()">÷</button>
+<button onclick="clearResult()">Clear</button>
+
+<h3 id="result">Result:</h3>
+
+
+</div>
+
+
+<script>
+
+function add(){
+let a=Number(document.getElementById("num1").value);
+let b=Number(document.getElementById("num2").value);
+result.innerHTML="Result: "+(a+b);
+}
+
+function subtract(){
+let a=Number(document.getElementById("num1").value);
+let b=Number(document.getElementById("num2").value);
+result.innerHTML="Result: "+(a-b);
+}
+
+function multiply(){
+let a=Number(document.getElementById("num1").value);
+let b=Number(document.getElementById("num2").value);
+result.innerHTML="Result: "+(a*b);
+}
+
+function divide(){
+let a=Number(document.getElementById("num1").value);
+let b=Number(document.getElementById("num2").value);
+result.innerHTML="Result: "+(a/b);
+}
+
+function clearResult(){
+document.getElementById("num1").value="";
+document.getElementById("num2").value="";
+result.innerHTML="Result:";
+}
+
+</script>
+
 </body>
 </html>
